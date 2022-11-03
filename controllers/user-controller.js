@@ -60,24 +60,35 @@ const userController = {
     User.findOneAndDelete({ _id: params.id })
       .then(dbUserData => res.json(dbUserData))
       .catch(err => res.json(err));
-  }
-};
+  },
 
   // add a friend
-  getUserById({ params }, res) {
-    User.findOne({ _id: params.id })
-      .populate({
-        path: 'thoughts',
-        select: '-__v'
-      })
+  addFriend({ params }, res) {
+    User.findOneAndUpdate({ friend: params.friendId }, body, {
+      new: true,
+      runValidators: true
+    })
       .select('-__v')
       .then(dbUserData => res.json(dbUserData))
       .catch(err => {
         console.log(err);
         res.sendStatus(400);
       });
-  },
-
+    },
+    deleteFriend({ params }, res) {
+      User.findOneAndUpdate({ friend: params.friendId }, body, {
+        new: true,
+        runValidators: true
+      })
+        .select('-__v')
+        .then(dbUserData => res.json(dbUserData))
+        .catch(err => {
+          console.log(err);
+          res.sendStatus(400);
+        });
+      },
+    ////// edit remove friend?
+  };
 
 
 module.exports = userController;
