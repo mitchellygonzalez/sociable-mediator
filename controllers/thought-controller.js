@@ -7,7 +7,7 @@ const thoughtController = {
     Thought.create(body)
       .then(({ _id }) => {
         return User.findOneAndUpdate(
-          { username: body.username },
+          { userName: body.userName },
           { $push: { thoughts: _id } },
           { new: true }
         );
@@ -15,7 +15,7 @@ const thoughtController = {
       .then(dbUserData => {
         console.log(dbUserData);
         if (!dbUserData) {
-          res.status(404).json({ message: 'No user found with this id!' });
+          res.status(404).json({ message: 'No user found with this username!' });
           return;
         }
         res.json(dbUserData);
@@ -48,7 +48,7 @@ const thoughtController = {
           return res.status(404).json({ message: 'No thought with this id!' });
         }
         return User.findOneAndUpdate(
-          { username: deletedThought.username },
+          { userName: deletedThought.userName },
           { $pull: { thoughts: deletedThought._id } },
           { new: true }
         );
