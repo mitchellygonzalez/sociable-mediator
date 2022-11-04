@@ -31,5 +31,7 @@ router
 .route('/:thoughtId/reactions/:reactionId')
 .delete(removeReaction);
 
+// BONUS: remove a user's associated thoughts when deleted - code in user-controller.js
+
 module.exports = router;
 
