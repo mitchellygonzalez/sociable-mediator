@@ -2,10 +2,11 @@ const router = require('express').Router();
 const {
   addThought,
   getThoughts,
+  getSingleThought,
   removeThought,
   addReaction,
   removeReaction,
-  getSingleThought,
+
 
 } = require('../../controllers/thought-controller');
 
