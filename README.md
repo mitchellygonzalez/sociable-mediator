@@ -3,6 +3,7 @@
 
 ## Table of Contents
 * [Description](#description)
+* [Video Walkthroughs](#description)
 * [User Story](#user-story)
 * [Acceptance Criteria](#acceptance-criteria)
 * [Installation](#installation)
@@ -14,9 +15,12 @@
 ## Description
 Many social networks function via utilizing the MongoDB database considering its speed while monitoring large amounts of data and flexibility with unstructured data. Here we'll be building APIs for a social network web application called Sociable Mediators. Users will be able to add each other as friends, share their thoughts, react to their friends' thoughts, and create a friend list. 
 
+## Video Walkthroughs
 Screencastify video links of functionality on Insomnia: 
-Backend functionality of Users + Friends: https://watch.screencastify.com/v/jA28bj8W8wqy5RQc05id
-Backend functionality of Thought + Reactions: https://watch.screencastify.com/v/QPJLbTJu6rxS4RBxX6ih
+- Backend functionality of Users + Friends: 
+    - https://watch.screencastify.com/v/jA28bj8W8wqy5RQc05id
+- Backend functionality of Thought + Reactions: 
+    - https://watch.screencastify.com/v/QPJLbTJu6rxS4RBxX6ih
 
 ## User Story
 AS A social media startup
@@ -50,11 +54,10 @@ Instructions for MacOS:
 3. To install Mongoose npm package, run the following on your terminal: npm install mongoose
 4. To download MongoDB, you'll need to have home-brew installed if you're using MacOS. If you don't have homebrew, run the following: 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 
-5. 
-
-////
-5. Before heading onto Insomnia, run one the following in your terminal to start the project: node server.js OR npm start
-6. Download Insomnia and create the Category, Product, and Tag folders and enter their corresponding http requests. Use the video in the description of this README.md as guidance for this step.
+5. Now that you're ready to download MongoDB, run: brew tap mongodb/brew
+6. Next, run: brew install mongodb-community@6.0
+7. Before heading to Insomnia, start the project by running: npm start
+6. Make sure you have Insomnia downloaded and create the User, Friends, Thoughts, and Reactions folders and enter their corresponding http requests. Use the video in the description of this README.md as guidance for this step.
 
 ## Contributors
 To contribute, you may clone this repo, and create a new branch to add your code. 
