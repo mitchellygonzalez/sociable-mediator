@@ -3,7 +3,7 @@
 
 ## Table of Contents
 * [Description](#description)
-* [Video Walkthroughs](#description)
+* [Video Walkthroughs](#video-walkthroughs)
 * [User Story](#user-story)
 * [Acceptance Criteria](#acceptance-criteria)
 * [Installation](#installation)
@@ -16,11 +16,11 @@
 Many social networks function via utilizing the MongoDB database considering its speed while monitoring large amounts of data and flexibility with unstructured data. Here we'll be building APIs for a social network web application called Sociable Mediators. Users will be able to add each other as friends, share their thoughts, react to their friends' thoughts, and create a friend list. 
 
 ## Video Walkthroughs
-Screencastify video links of functionality on Insomnia: 
+Google Drive links of functionality on Insomnia: 
 - Backend functionality of Users + Friends: 
-    - https://watch.screencastify.com/v/jA28bj8W8wqy5RQc05id
+  - https://drive.google.com/file/d/1ooIewd1XGrlkuSpBUsISmOyBeQfJQAGX/view
 - Backend functionality of Thought + Reactions: 
-    - https://watch.screencastify.com/v/QPJLbTJu6rxS4RBxX6ih
+  - https://drive.google.com/file/d/1q6XY3BAfWhkuG7a_kwipQAQM8UYXDmno/view
 
 ## User Story
 AS A social media startup
